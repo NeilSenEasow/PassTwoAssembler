@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assembler</title>
+    <link rel="stylesheet" href="STL1.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-center container">
+            <h1>TWO PASS ASSEMBLER</h1>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container place">
+        <!-- Assembly Code Input Section -->
+        <section class="bndry1">
+            <h2 id="lvl">Enter Assembly Code</h2>
+
+            <div class="fulline">
+
+                <!-- Assembly Code -->
+                <div class="text1">
+                    <label for="text1">Assembly Code</label>
+                    <textarea id="pass1" placeholder="Enter your assembly code here..."></textarea>
+                </div>
+
+                <!-- TextArea for assembly code -->
+                <div class="div1"></div>
+                    <input type="file" name="file" id="file1" accept=".txt">
+                    <div class = "funBtns1">
+                        <button id="btn1">Load SRC</button>
+                        <button id="btnsave1">Save SRC</button>
+                        <button id="clrsrc">Clear SRC</button>
+                    </div>
+                </div>
+
+                <!-- Optab Code -->
+                <div class="text2">
+                    <label for="op">OPTAB</label>
+                    <textarea id="op" placeholder="Your opcode will display here"></textarea>
+                </div>
+            </div>
+
+            <div class="uplod">
+
+                <!-- TextArea for optab code -->
+                <div class="div2">
+                    <input type="file" id="file2" accept=".txt">
+                    <div class = "funBtns2">
+                        <button id="btn2">Upload OP</button>
+                        <button id="btnsave2">Save OP</button>
+                        <button id="clrop">Clear OP</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <button id="btnp1">Assemble Pass One</button>
+
+        <!-- Pass 1 Output Section -->
+        <section class="bndry1">
+            <h2>Output for Pass 1</h2>
+            <div class="fulline">
+                <div class="text1">
+                    <h2>Intermediate File</h2>
+                    <textarea id="output1" placeholder="You will get INTERMEDIATE FILE for pass 1 here"></textarea>
+                </div>
+
+                <div class="div1"></div>
+                    <button id="btnsave3">Save File</button>
+                    <button id="clrout1">Clear Text</button>
+                </div>
+
+                <div class="text2">
+                    <h2>SYMTAB</h2>
+                    <textarea id="symtab" placeholder="Your symtab will display here"></textarea>
+                </div>
+            </div>
+
+            <div class="uplod">
+                
+
+                <div class="div2">
+                    <button id="btnsave4">Save File</button>
+                    <button id="clrsym">Clear Text</button>
+                </div>
+            </div>
+        </section>
+
+        <button id="btnp2">Assemble Pass Two</button>
+
+        <!-- Pass 2 Output Section -->
+        <section class="bndry1">
+            <h2>Output for Pass 2</h2>
+            <div class="text1">
+                <textarea readonly id="output2" placeholder="You will get output for pass 2 here"></textarea>
+            </div>
+
+            <div>
+                <button id="btnsave5">Save File</button>
+                <button id="clrout2">Clear Text</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-center">
+            <p>&copy; 2024 <span>Two Pass Assembler</span> All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="Scriptasmb.js"></script>
+</body>
+
+</html>

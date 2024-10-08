@@ -1,0 +1,147 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c5c8f7;
+    color: #000000;
+}
+
+
+.text1, .text2  {
+    margin-right: 10px;
+    /* padding: 10px; */
+    padding-right: 20px;
+}
+
+.navbar {
+    background-color: #c5c8f7;
+    padding: 15px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-center h1 {
+    text-align: center;
+    color: #000000;
+    margin: 0;
+    font-family: 'Verdana', sans-serif;
+}
+
+h2, h3, h5 {
+    text-align: center;
+    color: #000000;
+    margin: 10px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #afcaee;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(54, 3, 3, 0.1);
+}
+
+textarea, input[type="file"], button {
+    width: 100%;
+    font-size: 16px;
+    /* color: #000000; */
+}
+
+textarea {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    border: 1px solid #113e6b;
+    resize: vertical;
+    background-color: #7db5e2;
+}
+
+textarea:focus {
+    border-color: #0e4377;
+    box-shadow: 0 0 5px rgba(93, 170, 248, 0.5);
+    
+}
+
+button {
+    background-color: #5daaf8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Clear Buttons */
+#clrsrc, #clrsym, #clrop, #clrout1, #clrout2 {
+    background-color: red;
+}
+
+#clrsrc:hover, #clrsym:hover, #clrop:hover, #clrout1:hover, #clrout2:hover {
+    background-color: #011305;
+}
+
+/* Responsive Design
+@media (max-width: 768px) {
+    .fulline {
+        flex-direction: column;
+    }
+
+    .uplod, .div1, .div2 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    button, input[type="file"], textarea {
+        padding: 10px;
+    }
+} */
+
+/* For larger screens (desktops) */
+button, input[type="file"] {
+    width: 150px; /* Adjust the width as per your preference */
+    padding: 8px 12px;
+}
+
+/* Medium-sized screens (tablets) */
+@media (max-width: 768px) {
+    button, input[type="file"] {
+        width: 100%; /* Full width for smaller screens */
+        padding: 10px;
+    }
+}
+
+/* Small screens (mobile phones) */
+@media (max-width: 576px) {
+    button, input[type="file"], textarea {
+        padding: 10px;
+        width: 100%; /* Make buttons fill the width of the container */
+    }
+}
+
+.funBtns    {
+    position: relative;
+    justify-content: center;
+    align-self: right;  
+    margin-left: 60%;
+    /* background-color: #000000; */
+}
+
+#file1, #file2  {
+    /* background-color: #d3b7b7; */
+    color: #2c73d2  ;
+}
+
+.footer {
+    color: whitesmoke;
+}
+
